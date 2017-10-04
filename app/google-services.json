@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "994614093193",
+    "firebase_url": "https://firestoredemo-362a7.firebaseio.com",
+    "project_id": "firestoredemo-362a7",
+    "storage_bucket": "firestoredemo-362a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994614093193:android:bf57e575447f4863",
+        "android_client_info": {
+          "package_name": "govirtual360.firestoredemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994614093193-t2d61bq1l8r9shn45eeelgskg2846l1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkqX_wHMfGEfSQbe2OzGoskpwDLMa3j4o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
