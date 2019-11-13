@@ -4,59 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="govirtual360.firestoredemo.MainActivity">
+    tools:context="sample.firestoredemo.MainActivity">
 
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="45dp"
         android:ems="10"
+        android:padding="10dp"
+        android:hint="@string/name"
+        android:textColorHint="@android:color/black"
         android:inputType="textPersonName"
+        android:background="@android:color/transparent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_above="@+id/et_mobileno"
+        android:background="@color/colorPrimary" />
+
+
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/et_mobileno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/et_name"
+        android:textColorHint="@android:color/black"
         android:layout_marginTop="31dp"
         android:ems="10"
-        android:inputType="textPersonName"
-         />
+        android:padding="10dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/enter_phone"
+        android:inputType="phone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/btn_send"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-7dp"
+        android:background="@color/colorPrimary" />
+
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
-        android:text="Button" />
+        android:layout_below="@+id/et_mobileno"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="151dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="151dp"
+        android:text="save" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_user_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
+        android:layout_below="@+id/btn_send"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="66dp"
-        android:text="TextView" />
+        android:layout_marginTop="68dp"
+        android:textSize="18sp"
+        android:text="" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_get"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button"
-        android:layout_marginLeft="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="31dp"
-        android:layout_toEndOf="@+id/button"
-        android:layout_toRightOf="@+id/button"
-        android:text="Button" />
+        android:layout_below="@+id/btn_send"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="171dp"
+        android:layout_marginLeft="171dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
+        android:text="Get" />
 </RelativeLayout>

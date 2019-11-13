@@ -1,4 +1,4 @@
-package govirtual360.firestoredemo;
+package sample.firestoredemo;
 
 import org.junit.Test;
 

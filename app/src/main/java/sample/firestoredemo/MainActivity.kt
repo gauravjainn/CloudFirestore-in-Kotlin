@@ -18,11 +18,11 @@ import com.google.firebase.firestore.FirebaseFirestore
 import java.util.HashMap
 
 class MainActivity : AppCompatActivity() {
-    internal var etFirstName: EditText
-    internal var etMobileNo: EditText
-    internal var btnSend: Button
-    internal var btnGet: Button
-    internal var tvUserDetails: TextView
+    internal lateinit var etFirstName: EditText
+    internal lateinit var etMobileNo: EditText
+    internal lateinit var btnSend: Button
+    internal lateinit var btnGet: Button
+    internal lateinit var tvUserDetails: TextView
     private val TAG = "data"
     private val mdoc = FirebaseFirestore.getInstance().document("student/studentData")
 
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         btnGet.setOnClickListener {
             mdoc.get().addOnSuccessListener { documentSnapshot ->
                 if (documentSnapshot.exists()) {
-                    tvUserDetails.text = "Name - " + documentSnapshot.getString("name") + "\n Mobile No - " + documentSnapshot.getString("mobileNo")
+                    tvUserDetails.text = " Name - " + documentSnapshot.getString("name") + "\n Mobile No - " + documentSnapshot.getString("mobileNo")
                 }
             }
         }
